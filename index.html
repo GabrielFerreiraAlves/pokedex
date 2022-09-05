@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/pokemon-logo-8.png" alt="" class="logo">
+    </header>
+    <section class="input">
+        <input type="text" name="" id="txtname" placeholder="Id ou Nome do Pokemon">
+        <button id="searchName" onclick="searchPokemon()">Buscar</button>
+    </section>
+    <section class="data">
+        <img src="images/pokeball.png" alt="" id="img">
+        <p id="idPoke">#000</p>
+        <p id="pokemonName" translate="no">Nome</p>
+        <p id="types" translate="no">Tipo</p>
+        <p id="baseExperience">0xp</p>
+        <div class="statshp">
+            <p>Vida</p>
+            <div class="stats-cont">
+                <div class="bar">
+                    <span id="barhp"></span>
+                    <span class="fullbar"></span>
+                </div>
+                <p id="hp">0</p>
+            </div>
+            
+        </div>
+        <div class="statshp">
+            <p>Ataque</p>
+            <div class="stats-cont">
+                <div class="bar">
+                    <span id="barattack"></span>
+                    <span id="fullbar"></span>
+                </div>
+                <p id="attack">0</p>
+            </div>
+            
+        </div>
+        <div class="statshp">
+            <p>Defesa</p>
+            <div class="stats-cont">
+                <div class="bar">
+                    <span id="bardefense"></span>
+                    <span id="fullbar"></span>
+                </div>
+                <p id="defense">0</p>
+            </div>
+            
+        </div>
+        <div class="statshp">
+            <p>Ataque Especial</p>
+            <div class="stats-cont">
+                <div class="bar">
+                    <span id="barspecial"></span>
+                    <span id="fullbar"></span>
+                </div>
+                <p id="specialAttack">0</p>
+            </div>
+            
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy;Pokemon</p>
+    </footer>
+    <script src="pokedex.js"></script>
+</body>
+</html>
